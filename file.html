@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>https://portal.chennaicorporation.gov.in/online-civic-services/QRCRSDeathView.jsp?certifacteNo=D597214919911868813/2026</title>
+  <style>
+    /* Reset & Page Settings */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: "Times New Roman", Georgia, serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.35;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    /* Full-screen Certificate Container */
+    .certificate-container {
+      position: relative;
+      width: 100vw;
+      max-width: none;
+      min-height: 100vh;
+      padding: 16px 14px 120px 14px; /* Generous white space below content */
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    /* Diagonal Sample Watermark */
+    .watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-32deg);
+      font-size: 15px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 0.14);
+      border: 1.5px dashed rgba(0, 0, 0, 0.18);
+      padding: 8px 14px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-align: center;
+      white-space: nowrap;
+      pointer-events: none;
+      user-select: none;
+      z-index: 10;
+    }
+
+    /* Top Header */
+    .certificate-header {
+      display: grid;
+      grid-template-columns: 48px 1fr 48px;
+      align-items: start;
+      gap: 10px;
+      margin-bottom: 16px;
+      min-height: 60px;
+    }
+
+    /* Placeholder Logo Boxes */
+    .logo-box {
+      width: 80px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      user-select: none;
+      background-color: transparent;
+      justify-self: center;
+      align-self: start;
+      margin-top: 2px;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .header-text {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 0;
+    }
+
+    .header-logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 8px;
+      background: transparent;
+      padding: 0;
+    }
+
+    .header-line-1 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.15;
+    }
+
+    .header-line-2 {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 1.15;
+      margin-top: 2px;
+    }
+
+    .header-line-3 {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-top: 4px;
+      letter-spacing: 0.8px;
+    }
+
+    /* Two-column Key-Value Grid */
+    .fields-grid {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      row-gap: 6px;
+      column-gap: 0;
+      font-size: 14px;
+      line-height: 1.35;
+      position: relative;
+      z-index: 1;
+    }
+
+    .field-label {
+      font-weight: normal;
+      padding-right: 4px;
+      word-break: break-word;
+    }
+
+    .field-value {
+      font-weight: normal;
+      word-break: break-word;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .field-value .prefix {
+      flex-shrink: 0;
+      white-space: pre;
+    }
+
+    .field-value .text {
+      flex: 1;
+    }
+
+    /* Print styling */
+    @media print {
+      body {
+        background: #ffffff;
+      }
+      .certificate-container {
+        padding-bottom: 40px;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="certificate-container" id="certificate">
+    
+    <!-- Header Section -->
+    <header class="certificate-header">
+      <div class="logo-box" aria-label="Left logo placeholder">
+        <img src="Government health document page.png" alt="Left government logo" />
+      </div>
+      <div class="header-text">
+        <img class="header-logo" src="Government health document page (2).png" alt="Government logo" />
+        <div class="header-line-1" id="corp-name">GENERAL CHENNAI CORPORATION</div>
+        <div class="header-line-2" id="dept-name">DEPARTMENT OF PUBLIC HEALTH</div>
+        <div class="header-line-3" id="doc-title">DEATH CERTIFICATE</div>
+      </div>
+      <div class="logo-box" aria-label="Right logo placeholder">
+        <img src="Government health document page (1).png" alt="Right government logo" />
+      </div>
+    </header>
+
+    <!-- Key-Value Two-Column Grid (Rendered by JS) -->
+    <div class="fields-grid" id="record-fields"></div>
+  </div>
+
+  <script>
+    /**
+     * MUNICIPAL DEATH CERTIFICATE RECORD DATA
+     * Edit field values in this JavaScript object to update the record.
+     */
+    const recordData = {
+      "corporationName": "GENERAL CHENNAI CORPORATION",
+      "departmentName": "DEPARTMENT OF PUBLIC HEALTH",
+      "documentTitle": "DEATH CERTIFICATE",
+      "fields": [
+            {
+                  "label": "CNo",
+                  "value": "D597214919911868813/2026"
+            },
+            {
+                  "label": "Zone",
+                  "value": "01"
+            },
+            {
+                  "label": "Division",
+                  "value": "007"
+            },
+            {
+                  "label": "Name",
+                  "value": "JAYAGOPI"
+            },
+            {
+                  "label": "Sex",
+                  "value": "M"
+            },
+            {
+                  "label": "DOD",
+                  "value": "24/09/2026"
+            },
+            {
+                  "label": "Place of Death",
+                  "value": "RAJIV GANDHI GOVERNMENT GENERAL HOSPITAL,CHENNAI-600001"
+            },
+            {
+                  "label": "Father Name",
+                  "value": "ANNIYAPPAN"
+            },
+            {
+                  "label": "Mother Name",
+                  "value": "NAGAMMAL "
+            },
+            {
+                  "label": "Name of The Husband/Wife",
+                  "value": "KRISHNAVENI"
+            },
+            {
+                  "label": "Permanent Address",
+                  "value": "NO.53, Eda Street, Guruvarajpet, Sembedu, Arakkonam, TAMIL NADU -631101"
+            },
+            {
+                  "label": "Death Address",
+                  "value": "NO.53, Eda Street, Guruvarajpet, Sembedu, Arakkonam, TAMIL NADU -631101"
+            },
+            {
+                  "label": "Registration No.",
+                  "value": "D-2026:33-16345-000093"
+            },
+            {
+                  "label": "Date of Reg.",
+                  "value": "28/09/2026"
+            }
+      ]
+};
+
+    /**
+     * Renders header and grid rows from the JavaScript object
+     */
+    function renderCertificateRecord(data) {
+      // Update header titles
+      const corpEl = document.getElementById("corp-name");
+      const deptEl = document.getElementById("dept-name");
+      const titleEl = document.getElementById("doc-title");
+      if (corpEl) corpEl.textContent = data.corporationName;
+      if (deptEl) deptEl.textContent = data.departmentName;
+      if (titleEl) titleEl.textContent = data.documentTitle;
+
+      // Render grid rows
+      const gridContainer = document.getElementById("record-fields");
+      if (!gridContainer) return;
+
+      gridContainer.innerHTML = "";
+
+      data.fields.forEach(field => {
+        // Label Column (30%)
+        const labelDiv = document.createElement("div");
+        labelDiv.className = "field-label";
+        labelDiv.textContent = field.label;
+
+        // Value Column (70%) with ": " prefix
+        const valueDiv = document.createElement("div");
+        valueDiv.className = "field-value";
+
+        const prefixSpan = document.createElement("span");
+        prefixSpan.className = "prefix";
+        prefixSpan.textContent = ": ";
+
+        const textSpan = document.createElement("span");
+        textSpan.className = "text";
+        textSpan.textContent = field.value;
+
+        valueDiv.appendChild(prefixSpan);
+        valueDiv.appendChild(textSpan);
+
+        gridContainer.appendChild(labelDiv);
+        gridContainer.appendChild(valueDiv);
+      });
+    }
+
+    // Initial render on page load
+    document.addEventListener("DOMContentLoaded", () => {
+      renderCertificateRecord(recordData);
+    });
+
+    if (document.readyState === "interactive" || document.readyState === "complete") {
+      renderCertificateRecord(recordData);
+    }
+  </script>
+</body>
+</html>
